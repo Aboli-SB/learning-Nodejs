@@ -6,6 +6,12 @@ fs.writeFile('example.txt', 'Hello, Node.js!', (err) => {
 });
 
 
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log('File Content:', data);
+});
+
+
 // const EventEmitter = require('events');
 
 // const eventEmitter = new EventEmitter();
